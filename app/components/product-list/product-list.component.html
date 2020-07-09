@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="jumbotron">
+    <a
+      [routerLink]="['/new-product']"
+      routerLinkActive="router-link-active"
+      class="btn btn-lg btn-success pb-2"
+      >Add New product</a
+    >
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table table-hover table-borderless">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>
+          <span
+            (blur)="updateTitle(product.id, $event.target.innerText)"
+            contenteditable="true"
+            >{{ product.title }}</span
+          >
+        </td>
+
+        <td>
+          <span
+            (blur)="updateDescription(product.id, $event.target.innerText)"
+            contenteditable="true"
+            >{{ product.description }}</span
+          >
+        </td>
+
+        <td>
+          <span
+            (blur)="updateQuantity(product.id, $event.target.innerText)"
+            contenteditable="true"
+            >{{ product.quantity }}</span
+          >
+        </td>
+
+        <td>
+          <span
+            (blur)="updatePrice(product.id, $event.target.innerText)"
+            contenteditable="true"
+            >{{ product.price }}</span
+          >
+        </td>
+
+        <td>
+          <button
+            class="btn badge badge-danger btn-lg"
+            (click)="deleteProduct(product.id)"
+          >
+            X
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
