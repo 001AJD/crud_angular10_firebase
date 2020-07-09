@@ -7,3 +7,5 @@ https://thecodeblog.in/3/simple-crud-app-with-angular10-firebase.html
 
 Angular CLI: 10.0.1
 Node: 12.18.2
+
+repo is src folder inside angular 
