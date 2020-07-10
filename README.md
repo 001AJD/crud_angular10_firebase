@@ -9,3 +9,10 @@ Angular CLI: 10.0.1
 Node: 12.18.2
 
 repo is src folder inside angular 
+
+products collection structure
+products
+|---------->title: string
+|---------->description: string
+|---------->quantity: number
+|---------->price: number
