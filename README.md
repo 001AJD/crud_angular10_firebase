@@ -10,9 +10,11 @@ Node: 12.18.2
 
 repo is src folder inside angular 
 
+<pre> <code>
 products collection structure
 products
 |---------->title: string
 |---------->description: string
 |---------->quantity: number
 |---------->price: number
+</pre> </code>
