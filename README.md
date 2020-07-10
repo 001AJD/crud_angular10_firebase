@@ -9,8 +9,8 @@ Node: 12.18.2
 
 This repository is the src folder of Angular app
 
+<h4>Structure of <b>Products</b> Collection
 <pre> <code>
-products collection structure
 products
 |---------->title: string
 |---------->description: string
